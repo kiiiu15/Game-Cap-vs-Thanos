@@ -3,11 +3,11 @@ package game;
 /**
  * @author Aguston Bulzomi
  * These class is for  creating objets to be used by a @see Character to: Atack by causingDamage, DefendTheirSelves,etc. 
- * 
+ * it´s a conteniener for all weapons ans it´s abstractac beacause its has a abstrac metod 
  * 
  */
 
-public class Weapon {
+public abstract class Weapon {
 	private int damage;
 	private int defenseCapacity;
 	
@@ -45,4 +45,18 @@ public class Weapon {
 	public Weapon() {
 		
 	}
+	/**
+	 * @param none
+	 * @return int damage caused  by weapon
+	 * 
+	 */
+	public abstract int causeHarm();// every Weapon just cause harm in a diferent way; 
+	
+	/**
+	 * @parm none
+	 * @return int that represents how much defense againts an atack
+	 */
+	
+	public abstract int defence() ; 
+	
 }
