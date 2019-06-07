@@ -2,8 +2,8 @@ package game;
 
 /**
  * @author Aguston Bulzomi
- * These class is for  creating objets to be used by a @see Character to: Atack by causingDamage, DefendTheirSelves,etc. 
- * it큦 a conteniener for all weapons ans it큦 abstractac beacause its has a abstrac metod 
+ * This class is to create objects used by a @see Character to: Atack by causingDamage, DefendThemSelves,etc. 
+ * it큦 a container for all weapons and it큦 abstract because it has a abstract method 
  * 
  */
 
