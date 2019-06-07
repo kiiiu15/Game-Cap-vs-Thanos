@@ -49,7 +49,7 @@ public abstract class Character implements Icombat {
 		boolean isEqual=false;      
 		if (obj != null && obj instanceof Character) {
 			if (this.toString().equals(obj.toString())){
-				boolean isEqual=true;
+				 isEqual=true;
 			}
 		}
 		return isEqual;
