@@ -14,7 +14,7 @@ public abstract class Weapon {
 	
 	
 	
-	private int getDamage() {
+	protected int getDamage() {
 		return damage;
 	}
 
@@ -28,7 +28,7 @@ public abstract class Weapon {
 
 
 
-	private int getDefenseCapacity() {
+	protected int getDefenseCapacity() {
 		return defenseCapacity;
 	}
 
