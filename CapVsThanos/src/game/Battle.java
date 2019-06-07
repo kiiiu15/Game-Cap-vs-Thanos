@@ -3,12 +3,12 @@ package game;
 public class Battle <T extends Icombat, K extends Icombat> {
 	
 	
-	private void oneAtackEach(T playerOne, K playerTwo) {
+	private  void oneAtackEach(T playerOne, K playerTwo) {
 		playerTwo.getAtacked(playerOne.atack());
 		playerOne.getAtacked(playerTwo.atack());
 	} 
 	
-	private String fightToDeath(T playerOne, K playerTwo) {
+	public  String fightToDeath(T playerOne, K playerTwo) {
 		String winner= new String();
 		while (playerOne.lifeLeft() > 0 && playerTwo.lifeLeft() > 0) {
 			oneAtackEach(playerOne, playerTwo);
