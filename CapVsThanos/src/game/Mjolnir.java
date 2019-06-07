@@ -30,13 +30,33 @@ public class Mjolnir extends Weapon {
 	
 	@Override
 	public int causeHarm() {
-		// TODO Auto-generated method stub
 		return super.getDamage();
 	}
 	
 	@Override
 	public int defence() {
-		// TODO Auto-generated method stub
 		return super.getDefenseCapacity();
 	}
+	
+	public boolean addPersonWorthy (String newPersonWorthy) {
+		boolean wasAdded=false;
+		if (newPersonWorthy != null) {
+			getPeopleWorthy().add(newPersonWorthy);
+			wasAdded=true;
+			
+		}
+		return wasAdded;
+	}
+	
+	public boolean isPersonWorthy(String personToCheckWorthyness) {
+		boolean isWorthy=false;
+		if (personToCheckWorthyness != null) {
+			if (getPeopleWorthy().contains(personToCheckWorthyness)){
+				isWorthy=true;
+			}
+		}
+		return isWorthy;
+	}
+	
+	public 
 }
