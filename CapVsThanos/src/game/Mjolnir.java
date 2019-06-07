@@ -58,5 +58,29 @@ public class Mjolnir extends Weapon {
 		return isWorthy;
 	}
 	
-	public 
+	public boolean removePeopleWorthy (String personToRemove) {
+		boolean wasDeleted=false;
+		if (personToRemove != null) {
+			if (getPeopleWorthy().contains(personToRemove)) {
+				getPeopleWorthy().remove(personToRemove);
+				wasDeleted=true;
+			}
+		}
+		return wasDeleted;
+	}
+	
+	@Override
+		public boolean equals(Object obj) {
+			boolean isEqual=false;      
+			if (obj != null && obj instanceof Mjolnir) {
+				isEqual=true;
+			}
+			return isEqual;
+		}
+	
+	@Override
+		public String toString() {
+			String strToReturn="this is Mjolnir, Thor's hammer that has a worthyness enchantment setted by Odin in Thor's first movie movie; only people who are worthy of it can use it's power";
+			return strToReturn;
+		}
 }
