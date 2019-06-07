@@ -13,7 +13,7 @@ package game;
  */
 
 public interface Icombat {
-	public int atack (int damageToCause);              
+	public int atack ();              
 	public int defendYourSelf(int protection);
 	public void getAtacked(int damageRecieved );
 	public int lifeLeft();

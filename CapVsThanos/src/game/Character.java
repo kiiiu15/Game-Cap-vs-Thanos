@@ -57,7 +57,7 @@ public abstract class Character implements Icombat {
 
 @Override
 	public String toString() {
-		String strToReturn="I'm" +getName();
+		String strToReturn=getName();
 		return strToReturn;
 	}
 	
