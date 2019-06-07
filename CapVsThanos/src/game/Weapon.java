@@ -59,4 +59,22 @@ public abstract class Weapon {
 	
 	public abstract int defence() ; 
 	
+	
+	@Override
+	public boolean equals(Object obj) {
+		boolean isEqual=false;      
+		if (obj != null && obj instanceof Weapon) {
+			if (this.toString().equals(obj.toString())) {   // seriously i can do this all day.....
+				isEqual=true;
+			}
+		}
+		return isEqual;
+	}
+
+@Override
+	public String toString() {
+		String strToReturn="this is Weapon; power - defense : " + getDamage()+" - " + getDefenseCapacity();
+		return strToReturn;
+	}
+	
 }
