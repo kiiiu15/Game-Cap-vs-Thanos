@@ -1,7 +1,7 @@
 package game;
 
 /**
- * CapShield
+ * CapShield Feuereisen 
  */
 public class CapShield extends Weapon {
 
