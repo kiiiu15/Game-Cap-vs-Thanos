@@ -54,7 +54,7 @@ public abstract class Weapon {
 	
 	/**
 	 * @parm none
-	 * @return int that represents how much defense againts an atack
+	 * @return int that represents how much defense against an atack
 	 */
 	
 	public abstract int defence() ; 
