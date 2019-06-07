@@ -25,7 +25,12 @@ public class CapShield extends Weapon {
         if(obj != null && obj instanceof CapShield){
             isEqual=true;
         }
-        return isEqual;
+        return isEqual & super.equals(obj);
+    }
+
+    @Override
+    public String toString() {
+        return "CapShield ";
     }
     
     

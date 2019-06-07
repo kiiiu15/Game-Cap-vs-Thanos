@@ -28,7 +28,12 @@ public class StormBreaker extends Weapon {
         if(obj != null && obj instanceof StormBreaker){
             isEqual=true;
         }
-        return isEqual;
+        return isEqual & super.equals(obj);
+    }
+
+    @Override
+    public String toString() {
+        return "StormBreaker ";
     }
 
     

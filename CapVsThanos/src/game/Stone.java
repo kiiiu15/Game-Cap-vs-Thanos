@@ -8,6 +8,6 @@ package game;
  */
 public abstract class Stone {
 	
-	abstract int produceAttack();
+	public abstract int produceAttack();
 
 }
