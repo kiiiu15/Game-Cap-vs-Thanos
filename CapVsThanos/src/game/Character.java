@@ -43,4 +43,22 @@ public abstract class Character implements Icombat {
 		
 	}
 	
+	
+	@Override
+	public boolean equals(Object obj) {
+		boolean isEqual=false;      
+		if (obj != null && obj instanceof Character) {
+			if (this.toString().equals(obj.toString())){
+				boolean isEqual=true;
+			}
+		}
+		return isEqual;
+	}
+
+@Override
+	public String toString() {
+		String strToReturn="I'm" +getName();
+		return strToReturn;
+	}
+	
 }
