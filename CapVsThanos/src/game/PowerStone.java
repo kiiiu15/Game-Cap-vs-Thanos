@@ -1,7 +1,7 @@
 package game;
 
 public class PowerStone extends Stone{
-	public public PowerStone() {
+	public PowerStone() {
 		// TODO Auto-generated constructor stub
 	}
 
