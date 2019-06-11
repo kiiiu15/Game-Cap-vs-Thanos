@@ -7,8 +7,15 @@ package game;
  * it provides an method where they can fight to death. 
  *
  */
-public class Battle {
+public class Battle <K extends Icombat, T extends Icombat> {
 	public Battle() {
 		
 	}
+	
+	public void oneAtackEach(K playerOne, T playerTwo) {
+		playerTwo.getAtacked(playerOne.atack());
+		playerOne.getAtacked(playerTwo.atack());
+	}
+	
+	
 }
