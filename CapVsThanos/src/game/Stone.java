@@ -22,7 +22,7 @@ public abstract class Stone {
 			
 	}
 	
-	private abstract int produceAtack();
+	protected abstract int produceAtack();
 		
 		
 }
