@@ -9,7 +9,7 @@ package game;
  * 
  * in every combat people involved atacks others, defends thereselves and recieve damage; 
  * all while they still have "life" left;
- * 
+ * @version 0.2
  */
 
 public interface Icombat {

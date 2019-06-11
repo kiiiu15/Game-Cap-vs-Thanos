@@ -5,8 +5,8 @@ import java.util.Random;
  * 
  * @author Agustin Bulzomi
  * This class is ment to be a container for infinitystones; 
- * it has a random to be used by it´s subclaases to  produce an atcck; 
- *
+ * it has a random to be used by it´s subclases to  produce an atack; 
+ *	@version 0.1
  */
 public abstract class Stone {
 		

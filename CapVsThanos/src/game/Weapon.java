@@ -4,7 +4,7 @@ package game;
  * @author Aguston Bulzomi
  * These class is for  creating objets to be used by a @see Character to: Atack by causingDamage, DefendTheirSelves,etc. 
  * it´s a conteniener for all weapons ans it´s abstractac beacause its has a abstrac metod 
- * 
+ * @version 0.1
  */
 
 public abstract class Weapon {

@@ -1,5 +1,11 @@
 package game;
-
+ /**
+  * 
+  * @author Agustin Bulzomi
+  * this class is meant to be used as an object for  all the character in the game; heros or villians.
+  * @version 0.1
+  *
+  */
 public class CapShield extends Weapon {
 	public CapShield() {
 		

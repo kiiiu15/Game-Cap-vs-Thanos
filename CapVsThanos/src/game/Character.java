@@ -5,6 +5,7 @@ package game;
  * @author Agustin Bulzomi
  * this class is meant to be used as a container for both, villian and hero;
  *  it implemnts icombats beacuse we want them to fight
+ *	@version 0.2
  *
  */
 
