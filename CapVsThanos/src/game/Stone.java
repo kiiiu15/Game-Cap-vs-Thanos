@@ -1,9 +1,20 @@
 package game;
 
+import java.util.Random;
+
 public class Stone {
-		public Stone() {
+		
+	private Random stonePower;
+	
+	
+	protected Random getStonePower() {
+		return stonePower;
+	}
+
+
+	public Stone() {
 			
-		}
+	}
 		
 		
 }
