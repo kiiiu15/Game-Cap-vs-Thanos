@@ -22,6 +22,15 @@ public class Battle <K extends Icombat, T extends Icombat> {
 		while (playerOne.lifeLeft()>0 && playerTwo.lifeLeft()>0) {
 			oneAtackEach(playerOne, playerTwo);
 		}
+		if (playerOne.lifeLeft() <= 0 && playerTwo.lifeLeft() <=0) {
+			winner="tie";
+		}else {
+			if (playerOne.lifeLeft()<=0) {
+				winner=playerTwo.toString();
+			}else {
+				winner=playerOne.toString();
+			}
+		}
 		return winner; 
 	}
 	
