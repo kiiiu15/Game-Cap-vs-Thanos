@@ -21,7 +21,7 @@ public class CapShield extends Weapon {
 		boolean isEqual=false;
 		if (obj != null && obj instanceof CapShield) {
 			CapShield temporary = (CapShield) obj;
-			if (temporary.getDamage() == super.getDamage() && temporary.getDefenseCapacity()==super.getDefenseCapacity()) {
+			if (temporary.toString().equals(this.toString())) {
 				isEqual=true;
 			}
 		}
@@ -31,7 +31,7 @@ public class CapShield extends Weapon {
 	@Override
 	public String toString() {
 		String str=new String();
-		str="I´m Captian America´s shield, i didn´t broke even over Mjolnir but i just broke apart before thano´s wierd metal thing...";
+		str="I´m Captian America´s shield, i didn´t broke even over Mjolnir but i just broke apart before thano´s wierd metal thing... i have atack: "+getDamage()+" and defence: "+getDefenseCapacity();
 		return str;
 	}
 }
