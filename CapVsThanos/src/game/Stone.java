@@ -1,8 +1,14 @@
 package game;
 
 import java.util.Random;
-
-public class Stone {
+/**
+ * 
+ * @author Agustin Bulzomi
+ * This class is ment to be a container for infinitystones; 
+ * it has a random to be used by it´s subclaases to  produce an atcck; 
+ *
+ */
+public abstract class Stone {
 		
 	private Random stonePower;
 	
@@ -15,6 +21,8 @@ public class Stone {
 	public Stone() {
 			
 	}
+	
+	private abstract int produceAtack();
 		
 		
 }
