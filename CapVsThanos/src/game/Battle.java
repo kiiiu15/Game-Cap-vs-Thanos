@@ -17,5 +17,13 @@ public class Battle <K extends Icombat, T extends Icombat> {
 		playerOne.getAtacked(playerTwo.atack());
 	}
 	
+	public String battleToDeath (K playerOne, T playerTwo) {
+		String winner= new String ();
+		while (playerOne.lifeLeft()>0 && playerTwo.lifeLeft()>0) {
+			oneAtackEach(playerOne, playerTwo);
+		}
+		return winner; 
+	}
+	
 	
 }
