@@ -1,12 +1,13 @@
 package game;
 
-public class StormBreaker extends Weapon {
-	public StormBreaker() {
-		super();
+public class CapShield extends Weapon {
+	public CapShield() {
+		
 	}
 
 	@Override
 	public int causeHarm() {
+		
 		return super.getDamage();
 	}
 
@@ -14,8 +15,4 @@ public class StormBreaker extends Weapon {
 	public int defence() {
 		return super.getDefenseCapacity();
 	}
-	
-	
-	
-	
 }
