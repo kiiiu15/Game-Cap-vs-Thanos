@@ -15,4 +15,5 @@ public class CapShield extends Weapon {
 	public int defence() {
 		return super.getDefenseCapacity();
 	}
+	
 }
