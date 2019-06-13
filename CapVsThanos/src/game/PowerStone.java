@@ -1,11 +1,14 @@
 package game;
 
 public class PowerStone extends Stone{
+	public PowerStone() {
+		// TODO Auto-generated constructor stub
+	}
 
 	@Override
 	public int produceAttack() {
-		// TODO Auto-generated method stub
-		return 0;
+		//
+		return super.getRan().nextInt()%100+80;
 	}
 
 }
