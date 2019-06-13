@@ -24,8 +24,8 @@ import java.awt.event.*;
 
     }
 
-    /*public void actionPerformed(ActionEvent e){
+    public void actionPerformed(ActionEvent e){
 
-    } */
+    } 
      
  }
