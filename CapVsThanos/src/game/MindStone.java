@@ -6,8 +6,7 @@ public class MindStone extends Stone{
 	}
 	@Override
 	public int produceAttack() {
-		// TODO Auto-generated method stub
-		return 0;
+		return super.getRan().nextInt()*60+50;
 	}
 	@Override
 	public String toString() {
