@@ -74,10 +74,10 @@ import java.awt.event.*;
     add(label10);*/
 
     button = new JButton("Start");
-    button.setBounds(0, 0, 70, 30);
+    button.setBounds(480,597 , 70, 30);
     button.setBackground(new Color(0,0,0));
     button.setFont(new Font("Arial", 3, 14));
-    button.setForeground(new Color(255,0,0));
+    button.setForeground(new Color(222,0,0));
     button.addActionListener(this);
     add(button);
  
