@@ -13,6 +13,10 @@ public class Hero extends Character{
 	{
 		super();
 	}
+	public Hero(String name,int life)
+	{
+		super(name, life);
+	}
 
 	@Override
 	public int atack() {
