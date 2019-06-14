@@ -36,5 +36,6 @@ public abstract class Stone {
 		}
 		return isEqual;
 	}
+	public abstract int defend();
 
 }
