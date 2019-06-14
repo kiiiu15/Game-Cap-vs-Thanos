@@ -1,5 +1,4 @@
 package game;
-import org.json.simple.JSONArray;
 import org.json.JSONString;
 import org.json.JSONObject;
 import java.io.PrintWriter;
