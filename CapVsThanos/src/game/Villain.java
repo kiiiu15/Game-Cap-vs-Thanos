@@ -10,6 +10,6 @@ public class Villain extends Character{
 	
 	public Villain()
 	{
-		
+		super();
 	}
 }
