@@ -13,7 +13,7 @@ import java.awt.event.*;
   */
  public class StartGame extends JFrame implements ActionListener, ChangeListener {
     private JLabel label1, label2;
-
+    private String name = "";
        
     public StartGame(){
 
@@ -21,6 +21,9 @@ import java.awt.event.*;
         setTitle(" Avengers Game");
         getContentPane().setBackground(Color.BLACK);
         setIconImage(new ImageIcon(getClass().getResource("images/icon2.png")).getImage());
+        Welcome welcome = new Welcome();
+        name = welcome.text;
+        setTitle(name);
         
         ImageIcon image = new ImageIcon(getClass().getResource("images/antorxa.png"));
         label1 = new JLabel(image);

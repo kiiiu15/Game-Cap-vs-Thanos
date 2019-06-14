@@ -18,7 +18,7 @@ import java.awt.*;
 
     public Welcome(){
         setLayout(null);
-        setTitle(" Avengers Game");
+        setTitle("Avengers Game");
         getContentPane().setBackground(new Color(255,0,0));
      
         setIconImage(new ImageIcon(getClass().getResource("images/icon2.png")).getImage());
@@ -62,6 +62,7 @@ import java.awt.*;
     public void actionPerformed(ActionEvent e){
         if(e.getSource() == button1) {
             text = textField1.getText().trim(); // trim borra los espacios
+            setTitle(text);
             if(text.equals("") ){
                 JOptionPane.showMessageDialog(null, "Enter your name first");
             }else{
@@ -72,7 +73,7 @@ import java.awt.*;
                 choose.setLocationRelativeTo(null);
                 this.setVisible(false);
             }
-            setTitle(text);
+            
         }
 
     }
