@@ -4,7 +4,8 @@
 package game;
 
 /**
- * StormBreaker feuereisen
+ * StormBreaker
+ * @author feuereisen
  */
 public class StormBreaker extends Weapon {
 
