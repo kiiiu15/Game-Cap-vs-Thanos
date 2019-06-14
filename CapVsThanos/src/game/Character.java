@@ -45,6 +45,11 @@ public abstract class Character implements Icombat {
 	public Character() {
 		
 	}
+	public Character (String name, int life)
+	{
+		setName(name);
+		setLife(life);
+	}
 	
 	public  String obtainName()
 	{

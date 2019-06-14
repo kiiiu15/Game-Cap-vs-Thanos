@@ -13,6 +13,7 @@ public class Hero extends Character{
 	{
 		super();
 	}
+
 	@Override
 	public int atack() {
 		// TODO Auto-generated method stub

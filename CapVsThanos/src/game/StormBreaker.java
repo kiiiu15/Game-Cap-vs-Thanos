@@ -4,8 +4,7 @@
 package game;
 
 /**
- * StormBreaker
- * @author feuereisen
+ * StormBreaker feuereisen
  */
 public class StormBreaker extends Weapon {
 
@@ -36,6 +35,6 @@ public class StormBreaker extends Weapon {
     public String toString() {
         return "StormBreaker ";
     }
-
+    
     
 }
