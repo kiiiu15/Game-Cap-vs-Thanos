@@ -2,21 +2,27 @@ package game;
 import java.util.*;
 
 public class InfinityGauntlet extends Weapon {
-	private HashSet<Stone>infinityStone;
+	private ArrayList <Stone> infinityStones;
 	public InfinityGauntlet()
 	{
-		this.infinityStone= new HashSet<Stone>();
+		this.infinityStones= new ArrayList<Stone>();
 	}
+	
+	private ArrayList<Stone> getInfinityStones() {
+		return infinityStones;
+	}
+
 	@Override
 	public int causeHarm() {
-
-		return 0;//we have to modify the main method, it's incomplete. 
+		
+		return getInfinityStones().get(new Random().nextInt()%getInfinityStones().size()).produceAttack();
 	}
 	@Override
-	public int defence() {
-		// TODO Auto-generated method stub
-		return 0;
+	public int defence() {//
+
+		return getInfinityStones().get(new Random().nextInt()%getInfinityStones().size()).defend();
 	}
+	
 	@Override
 	public String toString() {
 		// TODO Auto-generated method stub

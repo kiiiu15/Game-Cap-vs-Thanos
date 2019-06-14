@@ -10,5 +10,10 @@ public class PowerStone extends Stone{
 		//
 		return super.getRan().nextInt()%100+80;
 	}
+	@Override
+	public int defend() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
 
 }

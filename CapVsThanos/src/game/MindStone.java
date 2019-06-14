@@ -13,5 +13,9 @@ public class MindStone extends Stone{
 		// TODO Auto-generated method stub
 		return super.toString();
 	}
-
+	@Override
+	public int defend() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
 }
