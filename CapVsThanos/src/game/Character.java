@@ -27,8 +27,7 @@ public abstract class Character implements Icombat {
 	private void setLife(int life) {
 		this.life = life;
 	}
-
-
+	
 
 	private String getName() {
 		return name;

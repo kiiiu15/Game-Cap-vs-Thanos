@@ -2,7 +2,7 @@ package game;
 
 public class Thor extends Hero{
 	public Thor() {
-		super();
+		super("Thor", 9 );
 		// TODO Auto-generated constructor stub
 	}
 	public String thorName()
