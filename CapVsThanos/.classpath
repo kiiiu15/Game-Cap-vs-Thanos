@@ -7,6 +7,5 @@
 	</classpathentry>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="lib" path="java-json.jar"/>
-	<classpathentry kind="lib" path="D:/Documentos/GitHub/Programacion-Laboratorio-3-UTN-MDP/2018/json/java-json.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
