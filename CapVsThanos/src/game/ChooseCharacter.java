@@ -13,7 +13,9 @@ import java.awt.event.*;
 
   private JLabel label1, label2, label3, label4, label5, label6, label7, label8, label9, label10, label11;
    JButton button, button1, button2,button3;
+   ImageIcon image,image1, image2, image3, image4, image5, image6, image7, image8;
    String  name = "";
+   public static String choosed = "";
 
    public ChooseCharacter(){
       
@@ -62,7 +64,7 @@ import java.awt.event.*;
     label4.setBounds(200,0,1000,700);
     add(label4);
 
-    ImageIcon image2 = new ImageIcon(getClass().getResource("images/thor.png"));
+    image2 = new ImageIcon(getClass().getResource("images/thor.png"));
     label3 = new JLabel(image2);
     label3.setBounds(100,0,1000,700);
     add(label3);
@@ -114,9 +116,7 @@ import java.awt.event.*;
     add(label9);
 
     
-    
- 
-  
+
 
    
     Toolkit toolkit = Toolkit.getDefaultToolkit();
@@ -127,18 +127,54 @@ import java.awt.event.*;
 
   public void actionPerformed(ActionEvent e){
       if(e.getSource() ==  button){
+            choosed = "thor";
             StartGame start = new StartGame();
             start.setBounds(0,0,1000,700);
             start.setVisible(true);
             start.setResizable(false);
             start.setLocationRelativeTo(null);
             this.setVisible(false);
-            }
+       }if(e.getSource() == button2){
+            choosed = "xika";
+            StartGame start = new StartGame();
+            start.setBounds(0,0,1000,700);
+            start.setVisible(true);
+            start.setResizable(false);
+            start.setLocationRelativeTo(null);
+            this.setVisible(false);
+       }if(e.getSource() == button1){
+            choosed = "robert";
+            StartGame start = new StartGame();
+            start.setBounds(0,0,1000,700);
+            start.setVisible(true);
+            start.setResizable(false);
+            start.setLocationRelativeTo(null);
+            this.setVisible(false);
+       }if(e.getSource() == button3){
+            choosed = "captain";
+            StartGame start = new StartGame();
+            start.setBounds(0,0,1000,700);
+            start.setVisible(true);
+            start.setResizable(false);
+            start.setLocationRelativeTo(null);
+            this.setVisible(false);
+       }
+       
+
   }
 
   @Override
   public void stateChanged(ChangeEvent e) {
 
   }
+
+    public static String getChoosed() {
+        return choosed;
+    }
+
+    public static void setChoosed(String choosed) {
+        ChooseCharacter.choosed = choosed;
+    }
     
+  
  }
