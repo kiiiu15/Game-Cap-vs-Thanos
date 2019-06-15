@@ -20,7 +20,10 @@ import org.json.JSONObject;
 public class Main {
 
 	public static void main(String[] args) {
-				
+		
+		
+		
+     		
 	  Welcome welcome = new Welcome();
 	  welcome.setBounds(0,0,1000,700);
 	  welcome.setVisible(true);
