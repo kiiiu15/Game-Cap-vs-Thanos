@@ -20,7 +20,7 @@ public class Main {
 
 	public static void main(String[] args) {
 		
-		Hero hero=new Hero();
+		Hero hero=new Hero("Thor", 100);
 		JSONObject myhero = new JSONObject();
 		try {
 			myhero.put("Name",hero.obtainName());
