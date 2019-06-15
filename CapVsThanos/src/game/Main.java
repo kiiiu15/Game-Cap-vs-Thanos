@@ -20,16 +20,16 @@ public class Main {
 
 	public static void main(String[] args) {
 		
-		Thor mithor=new Thor();
+		Hero hero=new Hero();
 		JSONObject myhero = new JSONObject();
 		try {
-			myhero.put("Name",mithor.obtainName());
+			myhero.put("Name",hero.obtainName());
 		} catch (JSONException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}// error for exception 
 		try {
-			myhero.put("Life", mithor.thorLife());
+			myhero.put("Life", hero.obtainLife());
 		} catch (JSONException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
