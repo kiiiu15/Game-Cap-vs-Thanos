@@ -5,6 +5,7 @@ import org.json.JSONException;
 import org.json.JSONObject;
 import java.io.PrintWriter;
 import java.io.StringWriter;
+import java.util.ArrayList;
 
 import org.json.JSONObject;
 
@@ -20,7 +21,12 @@ public class Main {
 
 	public static void main(String[] args) {
 		
+		ArrayList<Hero>listOfHeroes = new ArrayList<>();
+			
+		
+		
 		Hero hero=new Hero("Thor", 100);
+		
 		JSONObject myhero = new JSONObject();
 		try {
 			myhero.put("Name",hero.obtainName());
@@ -34,12 +40,31 @@ public class Main {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		Villain villian= new Villain("Thanos", 100);
+		listOfHeroes.add(hero);
+		
+		ArrayList<Hero>ListOfVillain = new ArrayList<>();
+		Villain villain= new Villain("Thanos", 100);
+		ListOfVillain.add(Villain );
+		JSONObject myVillain = new JSONObject();
+		try {
+			myVillain.put("Name", villain.obtainName());
+		} catch (JSONException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		try {
+			myVillain.put("Life", 100);
+		} catch (JSONException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 				
 		
 		JSONArray listOfCharacters = new JSONArray();
 		listOfCharacters.put(myhero);
+		listOfCharacters.put(myVillain);
 		System.out.print(myhero);
+		System.out.print(myVillain);
      		
 	  Welcome welcome = new Welcome();
 	  welcome.setBounds(0,0,1000,700);
@@ -47,7 +72,7 @@ public class Main {
 	  welcome.setResizable(false);
 	  welcome.setLocationRelativeTo(null);
 
-
+		
 
 	}
 
