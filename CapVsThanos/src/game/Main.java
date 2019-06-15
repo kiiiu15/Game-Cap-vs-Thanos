@@ -23,7 +23,7 @@ public class Main {
 		
 		ArrayList<Hero>listOfHeroes = new ArrayList<>();
 		
-		Hero hero=new Hero("Thor", 100);
+		Hero hero=new Hero("Thor", 80);
 		
 		JSONObject myheroes = new JSONObject();
 		try {
@@ -51,8 +51,8 @@ public class Main {
 		String output=myheroes.toString();
 		System.out.print(output);
 		
-		ArrayList<Villain>ListOfVillain = new ArrayList<>();
-		Villain villain= new Villain("Thanos", 100);
+		Villain villain= new Villain("Thanos", 90);
+		
 		JSONObject myVillain = new JSONObject();
 		try {
 			myVillain.put("Name", villain.obtainName());
@@ -61,29 +61,15 @@ public class Main {
 			e.printStackTrace();
 		}
 		try {
-			myVillain.put("Life", 100);
+			myVillain.put("Life", 90);
 		} catch (JSONException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		for(Villain villians : ListOfVillain)
-		{
-			ListOfVillain.add(villians);
-		}
-		try {
-			myVillain.put("Marvel's Villains", ListOfVillain);
-		} catch (JSONException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		String exit=myVillain.toString();
-		System.out.print(exit);
 		
-		/*JSONArray listOfCharacters = new JSONArray();
-		listOfCharacters.put(myhero);
-		listOfCharacters.put(myVillain);
-		System.out.print(myhero);
-		System.out.print(myVillain);*/
+		String exit=myVillain.toString();
+		System.out.println(exit);
+		
      		
 	  Welcome welcome = new Welcome();
 	  welcome.setBounds(0,0,1000,700);
