@@ -36,7 +36,7 @@ import java.awt.event.*;
     label11.setBounds(-350,260,1000,700);
     add(label11);
 
-    button = new JButton("Thanos");
+    button = new JButton("ThoR");
     button.setBounds(488,597 , 100, 30);
     button.setBackground(new Color(0,0,0));
     button.setFont(new Font("Lucida Calligraphy", 5, 14));
