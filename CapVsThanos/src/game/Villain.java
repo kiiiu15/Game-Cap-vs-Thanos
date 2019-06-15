@@ -11,6 +11,13 @@ public class Villain extends Character{
 	public Villain()
 	{
 		super();
+		ambition=0;
+	}
+	
+	public Villain(String name, int life)
+	{
+		super(name,life);
+		ambition=0;
 	}
 
 	@Override
