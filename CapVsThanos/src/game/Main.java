@@ -34,6 +34,8 @@ public class Main {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+		Villain villian= new Villain("Thanos", 100);
+				
 		
 		JSONArray listOfCharacters = new JSONArray();
 		listOfCharacters.put(myhero);
