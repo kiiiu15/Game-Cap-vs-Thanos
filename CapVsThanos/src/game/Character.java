@@ -13,7 +13,10 @@ public abstract class Character implements Icombat {
 	private int life;
 	private String name;
 	
-	
+	public int obtainLife()
+	{
+		return getLife();
+	}
 	
 	private int getLife() {
 		return life;
@@ -24,8 +27,7 @@ public abstract class Character implements Icombat {
 	private void setLife(int life) {
 		this.life = life;
 	}
-
-
+	
 
 	private String getName() {
 		return name;
@@ -42,7 +44,16 @@ public abstract class Character implements Icombat {
 	public Character() {
 		
 	}
+	public Character (String name, int life)
+	{
+		setName(name);
+		setLife(life);
+	}
 	
+	public  String obtainName()
+	{
+		return getName();
+	}
 	
 	@Override
 	public boolean equals(Object obj) {
@@ -56,7 +67,7 @@ public abstract class Character implements Icombat {
 	}
 
 @Override
-	public String toString() {
+	public String toString() { // not clear 
 		String strToReturn=getName();
 		return strToReturn;
 	}

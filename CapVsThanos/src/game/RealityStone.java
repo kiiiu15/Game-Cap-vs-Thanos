@@ -10,5 +10,10 @@ public class RealityStone extends Stone{
 		// TODO Auto-generated method stub
 		return super.getRan().nextInt()*70+60;
 	}
+	@Override
+	public int defend() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
 
 }
